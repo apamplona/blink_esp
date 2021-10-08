@@ -10,10 +10,10 @@ os.system("echo out > /sys/class/gpio/gpio35/direction")
  
 count = 0
 while count < 4:
-        print "______LED is ON_____"
+        print "led on"
         os.system("echo 1 > /sys/class/gpio/gpio35/value")
         time.sleep(1)
-        print "_____LED is off ____"
+        print "led off"
         os.system("echo 0 > /sys/class/gpio/gpio35/value")
         time.sleep(1)
         count = count +1
